@@ -1,2 +1,0 @@
-# CodeWarsAugust
-Code Wars August
