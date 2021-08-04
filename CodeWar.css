@@ -3,9 +3,9 @@ body {
   }
 button {
     color:red;
-    width: 150px;
-    height: 150px;
-    padding: 30px;
+    width: 250px;
+    height: 250px;
+    /* padding: 50px; */
     /* font-size: 24px */
 }
 /* img {
