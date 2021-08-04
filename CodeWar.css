@@ -1,0 +1,14 @@
+body {
+    background-color: #b8c0c2;
+  }
+button {
+    color:red;
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    /* font-size: 24px */
+}
+.Challenges{
+    display: flex;
+    justify-content: center;
+}
