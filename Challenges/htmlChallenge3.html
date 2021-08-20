@@ -23,15 +23,29 @@
         -moz-user-select: none;
         user-select: none;
       }
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        color: black;
+        border: 1px solid black;
+        border-radius: 0.5em;
+        font-size: 1.5em;
+        padding: 0 0.75em;
+        }
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
+
+      
     </style>
 
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
   <body>
     
@@ -63,8 +77,8 @@ Instructions: There is a hidden button inside this webpage. The task is to find 
   <div class="album py-5 bg-light" style="height: 1000px;">
     <!-- <div class="container"> -->
 
-            <button  type="button" disabled><h3><a href="htmlChallenge4.html">Click Me!</a></h3></button>
-
+            <!-- <button  type="button"><h3><a href="htmlChallenge4.html">Click Me!</a></h3></button> -->
+            <button><a href="htmlChallenge4.html">click me!</a></button>
     <!-- </div> -->
   </div>
 
@@ -113,3 +127,12 @@ Instructions: There is a hidden button inside this webpage. The task is to find 
 </head>
 
 <!-- <body style="background-color: #b8c0c2"> -->
+
+    <script>
+        $('button').on('mouseover',function() {
+        $(this).css({
+            top: (Math.random()*100)+'%',
+            left: (Math.random()*100)+'%' 
+        });
+        });
+    </script>
