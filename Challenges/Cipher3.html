@@ -73,8 +73,12 @@ Cipher Challenge instructions
         <br />
         <div style="display: flex;
         justify-content: center;">
-            <input>
-            <button>Submit </button>
+
+        <form name="frm" method="post" onsubmit="return validate()" >
+          <input type="text" name="digits1" id="digits1"  />
+          <input type="submit" value="submit" />
+        </form>
+
         </div>  
     </Card>
   </section>
@@ -123,3 +127,21 @@ Cipher Challenge instructions
 </head>
 
 <!-- <body style="background-color: #b8c0c2"> -->
+  <script>
+  
+    function validate() {
+    var digits = document.frm.digits1.value;
+    if(digits == 'COMPUTER')
+    {
+      location.href = 'https://andresmontemayorsalinas.github.io/CodeWarsAugust/Challenges/Cipher4.html';
+      
+    }
+    else
+    {
+      alert('The flag is incorrect');
+    }
+    
+    return false;
+    
+  }
+  </script>
