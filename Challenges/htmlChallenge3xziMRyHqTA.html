@@ -23,22 +23,36 @@
         -moz-user-select: none;
         user-select: none;
       }
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        color: black;
+        border: 1px solid black;
+        border-radius: 0.5em;
+        font-size: 1.5em;
+        padding: 0 0.75em;
+        }
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
+
+      
     </style>
 
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
   <body>
     
 <header>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a href="../index.html" class="navbar-brand d-flex align-items-center">
+      <a href="/index.html" class="navbar-brand d-flex align-items-center">
         <svg xmlns="https://andresmontemayorsalinas.github.io/CodeWarsAugust/" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         <strong>Atos</strong>
       </a>
@@ -51,20 +65,21 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light" style="color:black; font-size: 72px;">Congratulations! You completed the Metadata challenge</h1>
-        <!-- <p class="lead text-muted">
-Cipher Challenge instructions        
-</p> -->
+        <h1 class="fw-light" style="color:black; font-size: 72px;">HTML Challenge</h1>
+        <p class="" style="color:black; font-size: 24px;">
+Instructions: There is a hidden button inside this webpage. The task is to find it and click it to advance to the next step of the challenge
+       </p>
+
       </div>
     </div>
   </section>
 
-  <div class="album py-5" style="background-color: #5AB9EA ">
-    <div class="container">
-        
-        <h1>The hidden phrase is: aaaaaaaaaaaa</h1>
+  <div class="album py-5" style="height: 1000px; background-color: #5AB9EA">
+    <!-- <div class="container"> -->
 
-    </div>
+            <!-- <button  type="button"><h3><a href="htmlChallenge4.html">Click Me!</a></h3></button> -->
+            <button class="buttonClass"><a href="htmlChallenge4.html">click me!</a></button>
+    <!-- </div> -->
   </div>
 
 </main>
@@ -112,3 +127,12 @@ Cipher Challenge instructions
 </head>
 
 <!-- <body style="background-color: #b8c0c2"> -->
+
+    <script>
+        $('.buttonClass').on('mouseover',function() {
+        $(this).css({
+            top: (Math.random()*100)+'%',
+            left: (Math.random()*100)+'%' 
+        });
+        });
+    </script>

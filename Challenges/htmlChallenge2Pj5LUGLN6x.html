@@ -63,8 +63,10 @@ Instructions: There is a hidden button inside this webpage. The task is to find 
   <div class="album py-5" style="height: 1000px; background-color: #5AB9EA">
     <!-- <div class="container"> -->
 
-            <button  style="display: none"><h3><a href="htmlChallenge3.html">Click Me!</a></h3></button>
-
+            <form enctype="multipart/form-data" method="post"
+            action="https://us-central1-al1x-cat-development-20023.cloudfunctions.net/code_wars_hidden_button">
+            <input type="submit" value="Click Me!" style="display:none;">
+          </form>
     <!-- </div> -->
   </div>
 
