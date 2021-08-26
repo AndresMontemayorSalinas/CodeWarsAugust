@@ -59,13 +59,14 @@
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light" style="color:black; font-size: 72px;">Beaver Code Challenge</h1>
           <p class="" style="color:black; font-size: 24px;">
-            Cipher Challenge instructions
+  Instructions: In this challenge you will need to figure out the word that makes up the Ciphertext (shown below). You will need to construct the word back to it's original form. You can see the example below. 
+  Once you figure out the word, type it in the input below. If the word is correct, you will redirected to the next puzzle. If it's incorrect, it will let you know and you will have to try again.
           </p>
         </div>
       </div>
     </section>
 
-    <section style="height:700px">
+    <section style="height:800px">
       <Card style="margin:20px; background-color: #E3E2DF; height:800px; width:1050px">
         <div style="display: flex;
         justify-content: center;">
@@ -74,7 +75,15 @@
         <br />
         <div style="display: flex;
         justify-content: center;">
-          <image src="../Pictures/BeaverCode2.png" style="height:50px; width:150px" />
+          <p class="" style="color:black; font-size: 24px;">
+            The Ciphertext for this puzzle is the following. You will need to figure out the original word and type it in the input below.
+          </p>
+        </div>
+
+
+        <div style="display: flex;
+        justify-content: center;">
+          <image src="../Pictures/BeaverCode2.png" style="height:100px; width:300px" />
         </div>
         <br />
         <div style="display: flex;
@@ -82,7 +91,7 @@
 
           <form enctype="multipart/form-data" method="post"
             action="https://us-central1-al1x-cat-development-20023.cloudfunctions.net/code_wars_cipher_3">
-            <input type="text" value="" id="data" name="data">
+            <input style="width: 500px;" type="text" value="" id="data" name="data">
             <input type="submit" value="Submit">
           </form>
 
