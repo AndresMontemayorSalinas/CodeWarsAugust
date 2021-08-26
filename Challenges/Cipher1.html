@@ -53,7 +53,7 @@
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light" style="color:black; font-size: 72px;">Cipher Challenge</h1>
         <p class="" style="color:black; font-size: 24px;">
-Cipher Challenge instructions        
+Instructions: In this challenge you will need to figure out a secret phrase or word that is hidden in the puzzle below. Once you figure out the word or phrase, type it in the input below. If the phrase or word is correct, you will redirected to the next puzzle. If it's incorrect, it will let you know and you will have to try again.
 </p>
       </div>
     </div>
@@ -72,15 +72,16 @@ Cipher Challenge instructions
             <image src="../Pictures/CipherText.png" style="height:100px; width:1000px" />
         </div>    
         <br />
+        <br />
+        <br />
         <div style="display: flex;
         justify-content: center;">
 
       <form enctype="multipart/form-data" method="post"
         action="https://us-central1-al1x-cat-development-20023.cloudfunctions.net/code_wars_cipher_1">
-        <input type="text" value="" id="data" name="data">
+        <input style="width: 500px;" type="text" value="" id="data" name="data">
         <input type="submit" value="Submit">
       </form>
-
         </div>  
     </Card>
   </section>
